@@ -1,0 +1,10 @@
+<h2>Ingredients</h2>
+<ul class="ingredients">
+  <button class = 'button' (click)="onClick()" >Show Ingredients </button>
+    <div *ngIf= isButtonClicked>  
+      <li *ngFor="let ingredient of ingredients">
+      <span class="badge">{{ingredient.id}}</span> {{ingredient.name}}
+      </li>
+    </div>
+</ul>
+ 
