@@ -10,24 +10,25 @@ import { AUTHORS } from '../modules/mock-authors';
 })
 export class AuthorsComponent implements OnInit {
   authors = AUTHORS;
-  selectedAuthor:Author;
-  ButtonName:string = "Show Authors";
-  State:boolean = false;
+  selectedAuthor: Author;
+  ButtonName: string ;
+  State:boolean ;
 
   constructor() { }
 
   ngOnInit() {
+    this.ButtonName="Show Authors";
+    this.State=false;
   }
   onSelect(authors: Author): void {
     this.selectedAuthor = authors;
   }
-  
-toggle()
-{
-  this.ButtonName = "Hide Authors";
-  this.State = !this.State;
-this.ButtonName = this.State?"Hide Authors":"Show Authors";
-}
+
+  toggle() {
+    this.ButtonName = "Hide Authors";
+    this.State = !this.State;
+    this.ButtonName = this.State ? "Hide Authors" : "Show Authors";
+  }
 }
 
 
