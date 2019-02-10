@@ -10,6 +10,7 @@ export class IngredientsComponent implements OnInit {
 
   ingredients = INGREDIENT;
   isButtonClicked: boolean;
+  buttonName: String;
  
   constructor() { }
  
@@ -18,6 +19,7 @@ export class IngredientsComponent implements OnInit {
   }
   onClick(){
     this.isButtonClicked = !this.isButtonClicked;
+    this.buttonName = this.isButtonClicked ? "Show Ingredients" : "Hide Ingredients";
   }
 
 }
