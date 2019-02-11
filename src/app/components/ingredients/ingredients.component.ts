@@ -15,11 +15,12 @@ export class IngredientsComponent implements OnInit {
   constructor() { }
  
   ngOnInit() {
+    this.buttonName = 'Show Ingredients'
     this.isButtonClicked = false;
   }
   onClick(){
     this.isButtonClicked = !this.isButtonClicked;
-    this.buttonName = this.isButtonClicked ? "Show Ingredients" : "Hide Ingredients";
+    this.buttonName = this.isButtonClicked ? "Hide Ingredients" : "Show Ingredients";
   }
 
 }
