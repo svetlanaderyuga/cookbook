@@ -21,8 +21,5 @@ export class RecipesComponent implements OnInit {
   onSelect(recipe: Recipe): void {
     this.selectedRecipe = recipe;
   }
-  changeText(): void {
-  
-  }
 }
 

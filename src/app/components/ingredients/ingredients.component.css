@@ -85,7 +85,8 @@
     top:1px;
   }
   #ingredient.image{
-    height: 200px;
+    height: 15px;
+    width: 15px;
     display: block;
     
   }

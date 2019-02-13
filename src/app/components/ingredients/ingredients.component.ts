@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { INGREDIENT } from 'src/app/modules/mock-ingredients';
+import {Ingredient} from 'src/app/modules/ingredient';
 
 @Component({
   selector: 'app-ingredients',
@@ -11,6 +12,7 @@ export class IngredientsComponent implements OnInit {
   ingredients = INGREDIENT;
   isButtonClicked: boolean;
   buttonName: String;
+  selectedIngredient: Ingredient;
  
   constructor() { }
  
